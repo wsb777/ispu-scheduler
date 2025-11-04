@@ -52,10 +52,10 @@ async def cmd_help(message: types.Message):
 async def change_week(message: types.Message):
     value = userDict[message.from_user.id]
     match value:
-        case 1:
+        case 0:
             userDict[message.from_user.id] = 1
             await message.answer("Выбрана вторая неделя")
-        case 2:
+        case 1:
             userDict[message.from_user.id] = 0
             await message.answer("Выбрана первая неделя")
 
