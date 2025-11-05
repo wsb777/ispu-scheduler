@@ -11,7 +11,7 @@ from getdata import getDay,getMessage, calculateDate
 
 load_dotenv()
 
-logging.basicConfig(level=logging.INFO)
+logging.basicConfig(level=logging.DEBUG)
 
 router = Router()
 
