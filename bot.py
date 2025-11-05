@@ -32,7 +32,7 @@ main_kb = ReplyKeyboardMarkup(keyboard=kb_list,resize_keyboard=True)
 
 @router.message(Command("start"))
 async def cmd_start(message: types.Message):
-    userDict[message.from_user.id] = 1
+    userDict[message.from_user.id] = 0
     await message.answer("""
 Привет! Я бот с расписанием.
 Сейчас доступно только распиание группы 1-45м.
