@@ -29,7 +29,6 @@ def calculateDate(count_from_day) -> tuple[int, str]:
         week = 0
     else: 
         week=1
-    print(f"{week}  -  {week_day}")
     return week, week_day
         
 def getMessage(week:int,day :str) -> str:
